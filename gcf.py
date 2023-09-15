@@ -7,9 +7,7 @@ def factor(x):
 def gcf(x, y):
     xfactors = factor(x)
     yfactors = factor(y)
-    xlen = len(xfactors)
-    ylen = len(yfactors)
-    for i in range(1, xlen):
-        for j in range(1, ylen):
+    for i in range(1, len(xfactors)):
+        for j in range(1, len(yfactors)):
             if(xfactors[-i] == yfactors[-j]):
                 return xfactors[-i]
