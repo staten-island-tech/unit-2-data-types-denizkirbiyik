@@ -11,3 +11,4 @@ def aron(input):
         cur2 = input[i]
     num += 1
     return num
+print(aron([6, "B", "B", "B", "B", "B", "B"]))
