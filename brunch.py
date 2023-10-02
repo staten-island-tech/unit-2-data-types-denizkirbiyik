@@ -10,3 +10,8 @@ def brunch(input):
         return "YES"
     else:
         return "NO"
+def final(input):
+    f = []
+    for i in range(10):
+        f.append(brunch(input[0][6*i], input[0][6*i+1], input[0][6*i+2], input[0][6*i+3], input[0][6*i+4], input[0][6*i+5]))
+    return f
