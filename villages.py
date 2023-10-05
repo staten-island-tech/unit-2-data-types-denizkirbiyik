@@ -14,6 +14,6 @@ def village(inp):
     inp = insert(inp)
     distances = []
     for i in range(N-2):
-        distances.append(inp[i+2]/2-inp[i]/2)
+        distances.append((inp[i+2]-inp[i])/2)
     distances = insert(distances)
     return distances[0]
